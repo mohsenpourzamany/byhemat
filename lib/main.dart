@@ -1,4 +1,8 @@
+import 'package:byhemat/core/I18n/translations.dart';
+import 'package:byhemat/screens/signup.dart';
+import 'package:byhemat/widget/dropdown_lang.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,9 +13,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
+        translations: AppTranslations(),
+        locale: const Locale('Fa'),
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
+        home: const Scaffold(
           body: GetBodyWidget(),
         ));
   }
@@ -27,39 +33,44 @@ class GetBodyWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextButton(
-                    onPressed: () {
-                      // Navigator.of(context)
-                      //     .push(MaterialPageRoute(builder: (context) {
-                      //   // return Signup();
-                      // }));
-                    },
-                    style: ElevatedButton.styleFrom(
-                      minimumSize: const Size(20, 35),
-                      backgroundColor: const Color(0xffe5050e),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                    ),
-                    child: const MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: Text(
-                        'Fa',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'vazir',
-                          fontSize: 22,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ),
-                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                  child: DropdownLang(),
                 ),
+                // Padding(
+                //   padding: const EdgeInsets.all(20.0),
+
+                //   child: TextButton(
+                //     onPressed: () {
+                //       Navigator.of(context)
+                //           .push(MaterialPageRoute(builder: (context) {
+                //         return const AppLanguage();
+                //       }));
+                //     },
+                //     style: ElevatedButton.styleFrom(
+                //       minimumSize: const Size(20, 35),
+                //       backgroundColor: const Color(0xffe5050e),
+                //       shape: RoundedRectangleBorder(
+                //         borderRadius: BorderRadius.circular(10.0),
+                //       ),
+                //     ),
+                //     child: const MouseRegion(
+                //       cursor: SystemMouseCursors.click,
+                //       child: Text(
+                //         'Ln',
+                //         style: TextStyle(
+                //           color: Colors.white,
+                //           fontFamily: 'vazir',
+                //           fontSize: 22,
+                //           fontWeight: FontWeight.w700,
+                //         ),
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
             const Spacer(),
@@ -68,7 +79,7 @@ class GetBodyWidget extends StatelessWidget {
               image: AssetImage('assets/images/512.png'),
             ),
             const SizedBox(
-              height: 20,
+              height: 40,
             ),
             const Text(
               'بازاری به وسعت افغانستان',
@@ -82,7 +93,7 @@ class GetBodyWidget extends StatelessWidget {
             ),
             const Text(
               textDirection: TextDirection.rtl,
-              'در بای همت آگهی های خود را به نمایش گذاشته ',
+              'در بای همت سریعتر بفروشید ',
               style: TextStyle(
                   fontFamily: 'vazir',
                   fontSize: 15,
@@ -90,7 +101,7 @@ class GetBodyWidget extends StatelessWidget {
             ),
             const Text(
               textDirection: TextDirection.rtl,
-              'و به راحتی فروشنده شوید.',
+              'و آسان تر بخرید.',
               style: TextStyle(
                   fontFamily: 'vazir',
                   fontSize: 15,
@@ -102,10 +113,10 @@ class GetBodyWidget extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    // Navigator.of(context)
-                    //     .push(MaterialPageRoute(builder: (context) {
-                    //   // return Signup();
-                    // }));
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return const SignUpIn();
+                    }));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xffa8bdc6),
@@ -132,10 +143,10 @@ class GetBodyWidget extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    // Navigator.of(context)
-                    //     .push(MaterialPageRoute(builder: (context) {
-                    //   // return Signup();
-                    // }));
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return const SignUpIn();
+                    }));
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(150, 43),
