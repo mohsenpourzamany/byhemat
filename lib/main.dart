@@ -1,5 +1,5 @@
 import 'package:byhemat/core/I18n/translations.dart';
-import 'package:byhemat/screens/signup.dart';
+import 'package:byhemat/screens/register/signup.dart';
 import 'package:byhemat/widget/dropdown_lang.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -40,37 +40,6 @@ class GetBodyWidget extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                   child: DropdownLang(),
                 ),
-                // Padding(
-                //   padding: const EdgeInsets.all(20.0),
-
-                //   child: TextButton(
-                //     onPressed: () {
-                //       Navigator.of(context)
-                //           .push(MaterialPageRoute(builder: (context) {
-                //         return const AppLanguage();
-                //       }));
-                //     },
-                //     style: ElevatedButton.styleFrom(
-                //       minimumSize: const Size(20, 35),
-                //       backgroundColor: const Color(0xffe5050e),
-                //       shape: RoundedRectangleBorder(
-                //         borderRadius: BorderRadius.circular(10.0),
-                //       ),
-                //     ),
-                //     child: const MouseRegion(
-                //       cursor: SystemMouseCursors.click,
-                //       child: Text(
-                //         'Ln',
-                //         style: TextStyle(
-                //           color: Colors.white,
-                //           fontFamily: 'vazir',
-                //           fontSize: 22,
-                //           fontWeight: FontWeight.w700,
-                //         ),
-                //       ),
-                //     ),
-                //   ),
-                // ),
               ],
             ),
             const Spacer(),
@@ -119,40 +88,12 @@ class GetBodyWidget extends StatelessWidget {
                     }));
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xffa8bdc6),
-                    minimumSize: const Size(150, 43),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
-                  child: const MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    child: Text(
-                      'ثبت نام ',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'vazir',
-                        fontSize: 18,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  width: 20,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (context) {
-                      return const SignUpIn();
-                    }));
-                  },
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(150, 43),
+                    minimumSize: const Size(250, 43),
                     backgroundColor: const Color(0xffe5050e),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
+                      borderRadius: BorderRadius.circular(7.0),
+                      side:
+                          const BorderSide(color: Color(0xffa8bdc6), width: 3),
                     ),
                   ),
                   child: const MouseRegion(
@@ -162,7 +103,7 @@ class GetBodyWidget extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'vazir',
-                        fontSize: 18,
+                        fontSize: 22,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

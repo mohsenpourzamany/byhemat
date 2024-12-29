@@ -1,3 +1,4 @@
+import 'package:byhemat/screens/register/verification.dart';
 import 'package:flutter/material.dart';
 
 class SignUpIn extends StatelessWidget {
@@ -63,17 +64,20 @@ class LoginCard extends StatelessWidget {
                 height: 50,
               ),
               const TextField(
-                decoration: InputDecoration(labelText: 'Email'),
+                decoration: InputDecoration(labelText: 'ایمیل'),
               ),
               const SizedBox(height: 10),
               const TextField(
-                decoration: InputDecoration(labelText: 'Password'),
+                decoration: InputDecoration(labelText: 'رمز'),
                 obscureText: true,
               ),
               const SizedBox(height: 60),
               ElevatedButton(
                 onPressed: () {
-                  // Handle login logic here
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return const Verification();
+                  }));
                 },
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(130, 38),
@@ -89,6 +93,21 @@ class LoginCard extends StatelessWidget {
                     fontFamily: 'vazir',
                     fontSize: 16,
                     fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              GestureDetector(
+                onTap: () {},
+                child: const Text(
+                  'رمز را فراموش کردم',
+                  style: TextStyle(
+                    color: Colors.black45,
+                    fontFamily: 'vazir',
+                    fontSize: 13,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
@@ -124,21 +143,24 @@ class SignupCard extends StatelessWidget {
                 height: 50,
               ),
               const TextField(
-                decoration: InputDecoration(labelText: 'Full Name'),
+                decoration: InputDecoration(labelText: 'نام و نام خانوادگی'),
               ),
               const SizedBox(height: 10),
               const TextField(
-                decoration: InputDecoration(labelText: 'Email'),
+                decoration: InputDecoration(labelText: 'ایمیل'),
               ),
               const SizedBox(height: 10),
               const TextField(
-                decoration: InputDecoration(labelText: 'Password'),
+                decoration: InputDecoration(labelText: 'رمز'),
                 obscureText: true,
               ),
               const SizedBox(height: 70),
               ElevatedButton(
                 onPressed: () {
-                  // Handle signup logic here
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return const Verification();
+                  }));
                 },
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(130, 38),
@@ -154,6 +176,21 @@ class SignupCard extends StatelessWidget {
                     fontFamily: 'vazir',
                     fontSize: 16,
                     fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              GestureDetector(
+                onTap: () {},
+                child: const Text(
+                  'ـ قبلا ثبت نام کردم',
+                  style: TextStyle(
+                    color: Colors.black45,
+                    fontFamily: 'vazir',
+                    fontSize: 13,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
