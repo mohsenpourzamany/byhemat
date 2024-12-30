@@ -115,7 +115,7 @@ class _MainPageState extends State<MainPage> {
               ),
               BottomNavigationBarItem(
                 icon: const Icon(
-                  Icons.add_circle_outline_rounded,
+                  Icons.add_circle,
                   size: 50,
                   color: Colors.black,
                 ),
@@ -130,7 +130,7 @@ class _MainPageState extends State<MainPage> {
                   child: const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Icon(
-                      Icons.add_circle_outline_rounded,
+                      Icons.add_circle,
                       size: 50,
                       color: Color(0xffe5050e),
                     ),

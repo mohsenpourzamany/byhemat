@@ -39,6 +39,7 @@ dependencies:
   pin_code_fields: ^8.0.1
   pin_code_text_field: ^1.8.0
   flutter_verification_code: ^1.1.7
+  animated_search_bar: ^2.7.2
 
 dev_dependencies:
   flutter_test:
