@@ -18,11 +18,11 @@ class MainMenu extends StatelessWidget {
             height: 30,
           ),
           Image(
-            width: 100,
+            width: 80,
             image: AssetImage('assets/images/512.png'),
           ),
           SizedBox(
-            height: 100,
+            height: 30,
           ),
           RealstateMenu(),
           SizedBox(
@@ -32,11 +32,14 @@ class MainMenu extends StatelessWidget {
           SizedBox(
             height: 15,
           ),
+          ElectricMenu(),
+          SizedBox(
+            height: 15,
+          ),
           EmpeloyMenu(),
           SizedBox(
             height: 15,
           ),
-          ElectricMenu(),
           WorkMenu(),
           SizedBox(
             height: 15,

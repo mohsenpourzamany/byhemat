@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:byhemat/menu/main_menu.dart';
 import 'package:byhemat/screens/home_page.dart';
-import 'package:byhemat/screens/new_ads.dart';
+import 'package:byhemat/screens/new_ads/new_ads.dart';
 import 'package:byhemat/screens/profile/profile.dart';
 import 'package:byhemat/screens/special_ads.dart';
 import 'package:byhemat/widget/dropdown_city.dart';

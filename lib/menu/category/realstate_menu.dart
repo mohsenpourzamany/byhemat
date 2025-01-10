@@ -14,7 +14,8 @@ class _RealstateMenuState extends State<RealstateMenu> {
       onTap: () {},
       child: Container(
         decoration: const BoxDecoration(
-            border: Border(bottom: BorderSide(color: Color(0xff111111)))),
+            border: Border(
+                bottom: BorderSide(color: Color.fromARGB(255, 183, 183, 183)))),
         margin: const EdgeInsets.only(right: 50, left: 50),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,

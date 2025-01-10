@@ -14,8 +14,9 @@ class _WorkMenuState extends State<WorkMenu> {
       onTap: () {},
       child: Container(
         decoration: const BoxDecoration(
-            border: Border(bottom: BorderSide(color: Color(0xff111111)))),
-        margin: const EdgeInsets.only(right: 50, left: 50, top: 10),
+            border: Border(
+                bottom: BorderSide(color: Color.fromARGB(255, 183, 183, 183)))),
+        margin: const EdgeInsets.only(right: 50, left: 50),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
