@@ -40,6 +40,9 @@ dependencies:
   pin_code_text_field: ^1.8.0
   flutter_verification_code: ^1.1.7
   collection: ^1.18.0
+  dropdown_button2: ^2.3.9
+  gallery_picker: ^0.5.1
+  img_picker_platform_interface: ^3.0.0
 
 dev_dependencies:
   flutter_test:
