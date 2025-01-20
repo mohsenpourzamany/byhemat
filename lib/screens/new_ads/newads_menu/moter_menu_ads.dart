@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 
-import 'package:byhemat/screens/new_ads/realstate_ads/realstate_ads_screen.dart';
+import 'package:byhemat/screens/new_ads/car_ads/car_ads_screen.dart';
 import 'package:flutter/material.dart';
 
 class MoterMenuAds extends StatelessWidget {
@@ -16,7 +16,7 @@ class MoterMenuAds extends StatelessWidget {
       child: TextButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-            return const RealstateAdsScreen();
+            return const CarAdsScreen();
           }));
         },
         child: const Row(

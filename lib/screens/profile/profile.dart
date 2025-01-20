@@ -4,7 +4,7 @@ import 'package:byhemat/screens/profile/myads.dart';
 import 'package:byhemat/screens/profile/myfavourite.dart';
 import 'package:byhemat/screens/profile/mypayment.dart';
 import 'package:byhemat/screens/profile/oursupport.dart';
-import 'package:byhemat/screens/profile/personal_info.dart';
+import 'package:byhemat/screens/profile/personal_info/personal_info.dart';
 import 'package:byhemat/screens/profile/recentvisit.dart';
 import 'package:flutter/material.dart';
 

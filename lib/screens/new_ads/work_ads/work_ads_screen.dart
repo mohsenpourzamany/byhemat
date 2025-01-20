@@ -1,24 +1,23 @@
 import 'package:byhemat/screens/new_ads/amount_new_ads.dart';
+import 'package:byhemat/screens/new_ads/elec_ads/features_elec_ads.dart';
 import 'package:byhemat/screens/new_ads/google_map_new_ads.dart';
 import 'package:byhemat/screens/new_ads/photo_picker.dart';
-import 'package:byhemat/screens/new_ads/realstate_ads/drop_down_cat_ads.dart';
-import 'package:byhemat/screens/new_ads/realstate_ads/facility_new_ads.dart';
-import 'package:byhemat/screens/new_ads/realstate_ads/features_new_ads.dart';
+import 'package:byhemat/screens/new_ads/work_ads/drop_down_cat_work.dart';
 import 'package:flutter/material.dart';
 
-class RealstateAdsScreen extends StatefulWidget {
-  const RealstateAdsScreen({super.key});
+class WorkAdsScreen extends StatefulWidget {
+  const WorkAdsScreen({super.key});
 
   @override
-  State<RealstateAdsScreen> createState() => _RealstateAdsScreenState();
+  State<WorkAdsScreen> createState() => _WorkAdsScreenState();
 }
 
-class _RealstateAdsScreenState extends State<RealstateAdsScreen> {
+class _WorkAdsScreenState extends State<WorkAdsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ثبت اعلان ملک'),
+        title: const Text('ثبت اعلان کسب و کار'),
       ),
       body: SafeArea(
           child: Container(
@@ -72,7 +71,7 @@ class _RealstateAdsScreenState extends State<RealstateAdsScreen> {
                         ),
                       ),
                     ),
-                    const DropDownCatAds(),
+                    const DropDownCatWork(),
                   ],
                 ),
                 const SizedBox(
@@ -90,12 +89,7 @@ class _RealstateAdsScreenState extends State<RealstateAdsScreen> {
                   color: Color(0xffffffff),
                   height: 2,
                 ),
-                const FeaturesNewAds(),
-                const Divider(
-                  color: Color(0xffffffff),
-                  height: 2,
-                ),
-                const FacilityNewAds(),
+                const FeaturesElecAds(),
                 const SizedBox(
                   height: 10,
                 ),

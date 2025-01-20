@@ -1,4 +1,4 @@
-import 'package:byhemat/screens/new_ads/realstate_ads/realstate_ads_screen.dart';
+import 'package:byhemat/screens/new_ads/work_ads/work_ads_screen.dart';
 import 'package:flutter/material.dart';
 
 class WorkMenuAds extends StatelessWidget {
@@ -14,7 +14,7 @@ class WorkMenuAds extends StatelessWidget {
       child: TextButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-            return const RealstateAdsScreen();
+            return const WorkAdsScreen();
           }));
         },
         child: const Row(

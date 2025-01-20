@@ -1,4 +1,4 @@
-import 'package:byhemat/screens/new_ads/realstate_ads/realstate_ads_screen.dart';
+import 'package:byhemat/screens/new_ads/elec_ads/elec_ads_screen.dart';
 import 'package:flutter/material.dart';
 
 class ElectricMenuAds extends StatelessWidget {
@@ -14,7 +14,7 @@ class ElectricMenuAds extends StatelessWidget {
       child: TextButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-            return const RealstateAdsScreen();
+            return const ElecAdsScreen();
           }));
         },
         child: const Row(
