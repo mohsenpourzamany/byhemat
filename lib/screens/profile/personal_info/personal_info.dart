@@ -1,3 +1,4 @@
+import 'package:byhemat/screens/profile/personal_info/personal_info_screen.dart';
 import 'package:flutter/material.dart';
 
 class PersonalInfo extends StatefulWidget {
@@ -16,7 +17,11 @@ class _PersonalInfoState extends State<PersonalInfo> {
           color: const Color.fromARGB(250, 255, 244, 244),
           margin: const EdgeInsets.symmetric(horizontal: 10),
           child: TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return const PersonalInfoscreen();
+              }));
+            },
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
