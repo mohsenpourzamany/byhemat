@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NameWidget extends StatefulWidget {
-  const NameWidget({super.key});
+class EmailWidget extends StatefulWidget {
+  const EmailWidget({super.key});
 
   @override
-  State<NameWidget> createState() => _NameWidgetState();
+  State<EmailWidget> createState() => _EmailWidgetState();
 }
 
-class _NameWidgetState extends State<NameWidget> {
+class _EmailWidgetState extends State<EmailWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +17,7 @@ class _NameWidgetState extends State<NameWidget> {
         children: [
           const Text(
             textDirection: TextDirection.rtl,
-            'نام :',
+            'ایمیل :',
             style: TextStyle(
                 fontFamily: 'vazir', fontSize: 17, fontWeight: FontWeight.w700),
           ),
@@ -33,7 +33,7 @@ class _NameWidgetState extends State<NameWidget> {
             child: const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                'محسن ',
+                'mohsenp@gmail.com ',
                 style: TextStyle(
                     fontFamily: 'vazir',
                     fontSize: 18,

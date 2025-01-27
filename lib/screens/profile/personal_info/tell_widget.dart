@@ -10,26 +10,38 @@ class TellWidget extends StatefulWidget {
 class _TellWidgetState extends State<TellWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 3),
-      child: Row(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 3),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
+            textDirection: TextDirection.rtl,
             'موبایل :',
             style: TextStyle(
-                fontFamily: 'vazir', fontSize: 16, fontWeight: FontWeight.w600),
+                fontFamily: 'vazir', fontSize: 17, fontWeight: FontWeight.w700),
           ),
-          SizedBox(
-            width: 10,
+          const SizedBox(
+            height: 5,
           ),
-          Text(
-            '073245876 ',
-            style: TextStyle(
-                fontFamily: 'vazir',
-                fontSize: 17,
-                fontWeight: FontWeight.w500,
-                color: Color.fromARGB(255, 117, 117, 117)),
-          )
+          Container(
+            decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 234, 234, 234),
+                borderRadius: BorderRadius.circular(5)),
+            height: 38,
+            width: 400,
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                '072376541 ',
+                style: TextStyle(
+                    fontFamily: 'vazir',
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: Color.fromARGB(255, 117, 117, 117)),
+              ),
+            ),
+          ),
         ],
       ),
     );

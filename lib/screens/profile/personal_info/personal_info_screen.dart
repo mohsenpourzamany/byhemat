@@ -1,7 +1,11 @@
+import 'package:byhemat/screens/profile/personal_info/address_widget.dart';
+import 'package:byhemat/screens/profile/personal_info/email_widget.dart';
 import 'package:byhemat/screens/profile/personal_info/family_widget.dart';
 import 'package:byhemat/screens/profile/personal_info/name_widget.dart';
 import 'package:byhemat/screens/profile/personal_info/photo_pickers.dart';
 import 'package:byhemat/screens/profile/personal_info/tell_widget.dart';
+import 'package:byhemat/screens/profile/personal_info/user_name_widget.dart';
+import 'package:byhemat/widget/version_widget.dart';
 import 'package:flutter/material.dart';
 
 class PersonalInfoscreen extends StatefulWidget {
@@ -32,13 +36,31 @@ class _PersonalInfoscreenState extends State<PersonalInfoscreen> {
             ),
             PhotoPickers(),
             SizedBox(
-              height: 20,
+              height: 50,
             ),
             NameWidget(),
-            SizedBox(width: 400, height: 15, child: Divider()),
+            SizedBox(
+              height: 12,
+            ),
             FamilyWidget(),
-            SizedBox(width: 400, height: 15, child: Divider()),
+            SizedBox(
+              height: 12,
+            ),
             TellWidget(),
+            SizedBox(
+              height: 12,
+            ),
+            UserNameWidget(),
+            SizedBox(
+              height: 12,
+            ),
+            EmailWidget(),
+            SizedBox(
+              height: 12,
+            ),
+            AddressWidget(),
+            Spacer(),
+            Versionwidget()
           ],
         ),
       )),

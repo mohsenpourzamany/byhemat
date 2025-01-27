@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NameWidget extends StatefulWidget {
-  const NameWidget({super.key});
+class AddressWidget extends StatefulWidget {
+  const AddressWidget({super.key});
 
   @override
-  State<NameWidget> createState() => _NameWidgetState();
+  State<AddressWidget> createState() => _AddressWidgetState();
 }
 
-class _NameWidgetState extends State<NameWidget> {
+class _AddressWidgetState extends State<AddressWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +17,7 @@ class _NameWidgetState extends State<NameWidget> {
         children: [
           const Text(
             textDirection: TextDirection.rtl,
-            'نام :',
+            'آدرس :',
             style: TextStyle(
                 fontFamily: 'vazir', fontSize: 17, fontWeight: FontWeight.w700),
           ),
@@ -28,12 +28,15 @@ class _NameWidgetState extends State<NameWidget> {
             decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 234, 234, 234),
                 borderRadius: BorderRadius.circular(5)),
-            height: 38,
+            height: 100,
             width: 400,
             child: const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text(
-                'محسن ',
+              child: TextField(
+                maxLines: 5,
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                ),
                 style: TextStyle(
                     fontFamily: 'vazir',
                     fontSize: 18,

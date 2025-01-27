@@ -1,6 +1,6 @@
 import 'package:byhemat/screens/profile/aboutus.dart';
 import 'package:byhemat/screens/profile/appsettings.dart';
-import 'package:byhemat/screens/profile/myads.dart';
+import 'package:byhemat/screens/profile/myads/myads.dart';
 import 'package:byhemat/screens/profile/myfavourite.dart';
 import 'package:byhemat/screens/profile/mypayment.dart';
 import 'package:byhemat/screens/profile/oursupport.dart';

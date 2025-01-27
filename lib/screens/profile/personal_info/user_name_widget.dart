@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NameWidget extends StatefulWidget {
-  const NameWidget({super.key});
+class UserNameWidget extends StatefulWidget {
+  const UserNameWidget({super.key});
 
   @override
-  State<NameWidget> createState() => _NameWidgetState();
+  State<UserNameWidget> createState() => _UserNameWidgetState();
 }
 
-class _NameWidgetState extends State<NameWidget> {
+class _UserNameWidgetState extends State<UserNameWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +17,7 @@ class _NameWidgetState extends State<NameWidget> {
         children: [
           const Text(
             textDirection: TextDirection.rtl,
-            'نام :',
+            'نام کاربری :',
             style: TextStyle(
                 fontFamily: 'vazir', fontSize: 17, fontWeight: FontWeight.w700),
           ),
@@ -33,7 +33,7 @@ class _NameWidgetState extends State<NameWidget> {
             child: const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                'محسن ',
+                'باراد ۵۷ ',
                 style: TextStyle(
                     fontFamily: 'vazir',
                     fontSize: 18,
