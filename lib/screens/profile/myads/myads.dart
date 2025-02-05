@@ -1,3 +1,4 @@
+import 'package:byhemat/screens/profile/myads/myads_list.dart';
 import 'package:flutter/material.dart';
 
 class MyAds extends StatefulWidget {
@@ -16,7 +17,11 @@ class _MyAdsState extends State<MyAds> {
           color: const Color.fromARGB(250, 255, 244, 244),
           margin: const EdgeInsets.symmetric(horizontal: 10),
           child: TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return const MyAdsList();
+              }));
+            },
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
